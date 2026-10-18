@@ -5,30 +5,29 @@ defineProps<{
   project: ProjectItem
   problemLabel: string
   solutionLabel: string
-  resultLabel: string
   visitLive: string
 }>()
 </script>
 
 <template>
   <article class="rounded-2xl border border-surface-light-border dark:border-surface-dark-border bg-white dark:bg-surface-dark-card p-6 md:p-8 transition-all hover:border-emerald-500/40 dark:hover:border-emerald-500/40 shadow-sm">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
       <!-- Left / Top: Mockup Visual -->
-      <div class="lg:col-span-7">
+      <div class="lg:col-span-6">
         <a
           :href="project.liveUrl"
           target="_blank"
           rel="noopener noreferrer"
-          class="group block relative overflow-hidden rounded-xl border border-surface-light-border dark:border-surface-dark-border bg-gray-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+          class="group block relative overflow-hidden rounded-xl border border-surface-light-border dark:border-surface-dark-border bg-gray-950/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
           :aria-label="`${visitLive} - ${project.title}`"
         >
           <img
             :src="project.previewImage"
-            :alt="`Interface e métricas de ${project.title}`"
+            :alt="`Interface de ${project.title}`"
             loading="lazy"
             class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.01]"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
             <span class="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 bg-black/80 px-3 py-1 rounded">
               {{ visitLive }}
               <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -40,47 +39,53 @@ defineProps<{
       </div>
 
       <!-- Right / Bottom: Technical Breakdown -->
-      <div class="lg:col-span-5 flex flex-col justify-between h-full space-y-6">
+      <div class="lg:col-span-6 flex flex-col justify-between h-full">
         <div>
           <!-- Meta Header -->
-          <div class="flex items-center justify-between gap-3 mb-2">
-            <span class="text-xs font-mono text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-              {{ project.category }} · {{ project.year }}
-            </span>
-            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-mono font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-              {{ project.metric }}
+          <div class="mb-1">
+            <span class="text-xs font-mono text-gray-500 dark:text-gray-400">
+              {{ project.category }}, {{ project.year }}
             </span>
           </div>
 
-          <h3 class="text-2xl sm:text-3xl font-serif font-normal text-gray-900 dark:text-white mb-2">
+          <!-- Project Title & Subtitle -->
+          <h3 class="text-2xl sm:text-3xl font-serif font-normal text-gray-900 dark:text-white mb-1">
             {{ project.title }}
           </h3>
 
-          <p class="text-xs font-mono text-emerald-600 dark:text-emerald-400 mb-4">
+          <p class="text-sm text-gray-600 dark:text-gray-400 font-sans mb-5">
             {{ project.role }}
           </p>
 
-          <!-- Problem / Solution / Result Flow -->
-          <div class="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+          <!-- Problem & Solution Flow -->
+          <div class="space-y-3.5 mb-6 text-sm text-gray-700 dark:text-gray-300">
             <div>
-              <span class="font-mono text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 block mb-0.5">
+              <span class="text-xs font-medium text-gray-400 dark:text-gray-500 block mb-0.5">
                 {{ problemLabel }}
               </span>
               <p class="leading-relaxed">{{ project.problem }}</p>
             </div>
 
             <div>
-              <span class="font-mono text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 block mb-0.5">
+              <span class="text-xs font-medium text-gray-400 dark:text-gray-500 block mb-0.5">
                 {{ solutionLabel }}
               </span>
               <p class="leading-relaxed">{{ project.solution }}</p>
             </div>
+          </div>
 
-            <div class="p-3 rounded-lg bg-emerald-500/5 dark:bg-emerald-500/10 border border-emerald-500/15">
-              <span class="font-mono text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 block mb-0.5">
-                {{ resultLabel }}
+          <!-- Prominent Metric Callout -->
+          <div class="flex items-center gap-4 pt-3 pb-3 mb-5 border-t border-surface-light-border/60 dark:border-surface-dark-border/60">
+            <span class="text-4xl sm:text-5xl font-mono font-bold text-emerald-500 dark:text-emerald-400 tracking-tight leading-none">
+              {{ project.metric.value }}
+            </span>
+            <div class="text-xs leading-snug">
+              <span class="font-medium text-gray-800 dark:text-gray-200 block">
+                {{ project.metric.label }}
               </span>
-              <p class="text-gray-700 dark:text-gray-200 leading-relaxed">{{ project.result }}</p>
+              <span v-if="project.metric.detail" class="text-gray-500 dark:text-gray-400 block mt-0.5">
+                {{ project.metric.detail }}
+              </span>
             </div>
           </div>
         </div>
@@ -101,9 +106,9 @@ defineProps<{
             :href="project.liveUrl"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 text-sm font-mono font-medium text-emerald-600 dark:text-emerald-400 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded py-1"
+            class="inline-flex items-center gap-1.5 text-sm font-mono font-medium text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 dark:hover:text-emerald-300 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded py-0.5"
           >
-            <span>{{ visitLive }} ({{ project.liveUrl.replace('https://', '') }})</span>
+            <span>{{ visitLive }}</span>
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>

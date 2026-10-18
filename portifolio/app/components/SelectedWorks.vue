@@ -31,7 +31,6 @@ const { content } = useLocale()
           :project="project"
           :problem-label="content.works.problemLabel"
           :solution-label="content.works.solutionLabel"
-          :result-label="content.works.resultLabel"
           :visit-live="content.works.visitLive"
         />
       </div>
