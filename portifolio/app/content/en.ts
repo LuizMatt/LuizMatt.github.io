@@ -28,36 +28,41 @@ export const enContent: PortfolioContent = {
     subtitle: 'Real-world applications engineered with precision, user-first ergonomics, and clean architecture.',
     problemLabel: 'The Problem',
     solutionLabel: 'What I Did',
-    resultLabel: 'Outcome',
-    visitLive: 'Visit live application',
+    visitLive: 'View site',
     projects: [
       {
         id: 'brasystem',
         title: 'Brasystem',
         year: '2026',
-        role: 'Full Stack & Infrastructure',
-        category: 'Freelance · Web Application',
+        role: 'Institutional website, full-stack & infrastructure',
+        category: 'Freelance',
         liveUrl: 'https://brasystem.net',
-        previewImage: '/projects/brasystem-preview.svg',
-        metric: '92 PageSpeed SEO',
-        problem: 'Client required a high-performing commercial presence with complete autonomy to manage promotional banners and service plan pricing, bypassing expensive managed platforms.',
-        solution: 'Built the site entirely from scratch (front-end, back-end, and infrastructure). Configured and operated a self-managed Hostinger VPS with custom DNS, SSL/HTTPS certificates, and an intuitive custom administration panel for the client.',
-        result: 'Achieved a 92 PageSpeed Insights SEO score, eliminated reliance on external technical support for pricing updates, and established resilient HTTPS production hosting.',
-        tags: ['Vue.js / Nuxt', 'Node.js', 'Hostinger VPS', 'DNS & SSL/HTTPS', 'PageSpeed 92 SEO']
+        previewImage: '/projects/brasystem.png',
+        metric: {
+          value: '92',
+          label: 'on PageSpeed Insights (SEO).',
+          detail: 'Client updates the site autonomously.'
+        },
+        problem: 'The company needed a fast, easily editable website without paying for expensive managed platforms.',
+        solution: 'Engineered front-end, API, and infrastructure from scratch, with custom DNS, SSL, and VPS deployment, plus a client dashboard to update plans, pricing, and banners.',
+        tags: ['Nuxt', 'Node.js', 'Nginx', 'VPS']
       },
       {
         id: 'animabrindes',
         title: 'AnimaBrindes',
         year: '2025',
-        role: 'Front-end & Product',
-        category: 'Freelance · Commercial Catalog',
+        role: 'Commercial catalog & digital prototyping',
+        category: 'Freelance',
         liveUrl: 'https://animabrindes.com',
         previewImage: '/projects/animabrindes-preview.svg',
-        metric: 'Zero Rework',
-        problem: 'Commercial promotional gifts catalog needed on a tight deadline with zero margin for visual misalignment before starting code implementation.',
-        solution: 'Led the project end-to-end: comprehensive Figma prototyping validated directly with the client, followed by agile development and production deployment with SSL/HTTPS.',
-        result: 'Validating the complete visual design in Figma beforehand prevented late-stage code rewrites, delivering a secure commercial catalog ready for immediate customer traffic.',
-        tags: ['Figma Prototyping', 'Front-end', 'HTTPS/SSL', 'Commercial Production']
+        metric: {
+          value: '0',
+          label: 'code rework.',
+          detail: 'Upfront validation and approval in Figma.'
+        },
+        problem: 'Urgent commercial digital catalog with zero tolerance for visual rework during code implementation.',
+        solution: 'End-to-end Figma prototyping validated upfront with the client, followed by agile development and HTTPS production deploy.',
+        tags: ['Figma', 'Front-end', 'Tailwind', 'HTTPS']
       }
     ]
   },

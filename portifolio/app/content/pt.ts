@@ -28,36 +28,41 @@ export const ptContent: PortfolioContent = {
     subtitle: 'Aplicações reais desenvolvidas com rigor técnico, foco em experiência do usuário e arquitetura enxuta.',
     problemLabel: 'Problema',
     solutionLabel: 'O que fiz',
-    resultLabel: 'Resultado',
-    visitLive: 'Visitar aplicação',
+    visitLive: 'Ver site',
     projects: [
       {
         id: 'brasystem',
         title: 'Brasystem',
         year: '2026',
-        role: 'Full Stack & Infraestrutura',
-        category: 'Freelance · Web Application',
+        role: 'Site institucional, full stack e infraestrutura',
+        category: 'Freelance',
         liveUrl: 'https://brasystem.net',
-        previewImage: '/projects/brasystem-preview.svg',
-        metric: '92 PageSpeed SEO',
-        problem: 'A empresa necessitava de uma presença web de alta performance comercial com autonomia total para gerenciamento de banners e preços de planos, eliminando custos de plataformas gerenciadas.',
-        solution: 'Desenvolvimento do site do zero (front-end, back-end e infraestrutura). Configuração e gestão de VPS Hostinger autogerenciada com DNS, certificados SSL e ambiente de produção, além de painel administrativo sob medida para o cliente.',
-        result: 'Pontuação de 92 no PageSpeed Insights para SEO, zero dependência de suporte técnico para edição de planos e infraestrutura resiliente com HTTPS.',
-        tags: ['Vue.js / Nuxt', 'Node.js', 'Hostinger VPS', 'DNS & SSL/HTTPS', 'PageSpeed 92 SEO']
+        previewImage: '/projects/brasystem.png',
+        metric: {
+          value: '92',
+          label: 'no PageSpeed Insights (SEO).',
+          detail: 'O cliente atualiza o site sozinho.'
+        },
+        problem: 'A empresa queria um site rápido e fácil de atualizar, sem pagar por plataforma gerenciada.',
+        solution: 'Desenvolvi front-end, API e infraestrutura do zero, com DNS, SSL e deploy em VPS própria, além de um painel para o cliente editar planos, preços e banners.',
+        tags: ['Nuxt', 'Node.js', 'Nginx', 'VPS']
       },
       {
         id: 'animabrindes',
         title: 'AnimaBrindes',
         year: '2025',
-        role: 'Front-end & Produto',
-        category: 'Freelance · Catálogo Comercial',
+        role: 'Catálogo comercial e prototipação digital',
+        category: 'Freelance',
         liveUrl: 'https://animabrindes.com',
         previewImage: '/projects/animabrindes-preview.svg',
-        metric: 'Zero Retrabalho',
-        problem: 'Demanda por catálogo comercial digital de brindes com prazos curtos e necessidade de validação antecipada da identidade visual antes de codificar.',
-        solution: 'Liderança ponta a ponta: prototipação completa no Figma alinhada diretamente com o cliente, desenvolvimento ágil e deploy em produção com HTTPS/SSL configurado.',
-        result: 'Aprovação do layout no Figma antes da implementação evitou retrabalho de código tardio, entregando a plataforma pronta e segura para uso comercial imediato.',
-        tags: ['Figma Prototyping', 'Front-end', 'HTTPS/SSL', 'Produção Comercial']
+        metric: {
+          value: '0',
+          label: 'retrabalho de código.',
+          detail: 'Validação e aprovação antecipada no Figma.'
+        },
+        problem: 'Demanda por catálogo digital com prazo curto e sem margem para retrabalho visual durante o código.',
+        solution: 'Prototipação validada no Figma alinhada com o cliente, desenvolvimento ágil e deploy em produção com HTTPS.',
+        tags: ['Figma', 'Front-end', 'Tailwind', 'HTTPS']
       }
     ]
   },

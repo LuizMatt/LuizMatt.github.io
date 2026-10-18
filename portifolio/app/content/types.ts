@@ -1,3 +1,9 @@
+export interface ProjectMetric {
+  value: string
+  label: string
+  detail?: string
+}
+
 export interface ProjectItem {
   id: string
   title: string
@@ -6,10 +12,9 @@ export interface ProjectItem {
   category: string
   liveUrl: string
   previewImage: string
-  metric: string
+  metric: ProjectMetric
   problem: string
   solution: string
-  result: string
   tags: string[]
 }
 
@@ -67,7 +72,6 @@ export interface PortfolioContent {
     subtitle: string
     problemLabel: string
     solutionLabel: string
-    resultLabel: string
     visitLive: string
     projects: ProjectItem[]
   }
