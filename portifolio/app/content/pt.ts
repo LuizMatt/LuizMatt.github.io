@@ -12,12 +12,12 @@ export const ptContent: PortfolioContent = {
     langToggleAria: 'Mudar para Inglês'
   },
   hero: {
-    status: 'Disponível para remoto',
-    location: 'Campina Grande, PB, Brasil',
+    status: '',
+    location: '',
     greeting: 'Olá, sou',
-    name: 'Luiz Matheus Rodrigues Lins',
+    name: 'Luiz Lins',
     role: 'Software Engineer · Front-end & Full Stack',
-    positioning: 'Desenvolvedor focado em front-end com experiência de ponta a ponta: de interfaces resilientes em Vue, Nuxt e React a APIs em Node.js e Java, com infraestrutura própria (VPS, DNS, SSL). Foco em código sustentável, impacto mensurável e colaboração direta.',
+    positioning: 'Desenvolvedor focado em front-end com experiência de ponta a ponta: de interfaces resilientes em <strong>Vue</strong>, <strong>Nuxt</strong> e <strong>React</strong> a APIs em <strong>Node.js</strong>, <strong>PHP (Laravel)</strong> e <strong>Java</strong>, com infraestrutura própria (VPS, DNS, SSL). Foco em código sustentável, impacto mensurável e colaboração direta.',
     ctaProjects: 'Ver trabalhos selecionados',
     ctaContact: 'Entrar em contato',
     downloadCv: 'Baixar Currículo (PDF)'
@@ -149,7 +149,7 @@ export const ptContent: PortfolioContent = {
     availabilityNote: 'Residência em Campina Grande, PB · Disponível para contratação remota imediata.'
   },
   footer: {
-    copyright: '© 2026 Luiz Matheus Rodrigues Lins. Todos os direitos reservados.',
+    copyright: '© 2026 Luiz Lins. Todos os direitos reservados.',
     techStack: 'Construído com Nuxt 4 & Tailwind CSS · SSG Puro',
     backToTop: 'Voltar ao topo'
   }

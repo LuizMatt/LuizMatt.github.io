@@ -8,15 +8,15 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'pt-BR'
       },
-      title: 'Luiz Matheus Rodrigues Lins — Software Engineer',
+      title: 'Luiz Lins — Software Engineer',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Software Engineer focado em front-end (React, Vue, Nuxt, Node.js). Experiência corporativa e freelance, infraestrutura própria e código sustentável.' },
+        { name: 'description', content: 'Software Engineer focado em front-end (Vue, Nuxt, React) e APIs (Node.js, PHP/Laravel, Java). Infraestrutura própria e código sustentável.' },
         { name: 'theme-color', content: '#0B0F12' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: 'Luiz Matheus Rodrigues Lins — Software Engineer' },
-        { property: 'og:description', content: 'Software Engineer com foco em front-end, experiência corporativa e freelance com arquitetura multibrand, design systems e infraestrutura própria.' }
+        { property: 'og:title', content: 'Luiz Lins — Software Engineer' },
+        { property: 'og:description', content: 'Software Engineer focado em front-end (Vue, Nuxt, React) e APIs (Node.js, PHP/Laravel, Java). Infraestrutura própria e código sustentável.' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

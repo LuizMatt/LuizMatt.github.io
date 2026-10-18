@@ -12,12 +12,12 @@ export const enContent: PortfolioContent = {
     langToggleAria: 'Switch to Portuguese'
   },
   hero: {
-    status: 'Available for remote work',
-    location: 'Campina Grande, PB, Brazil',
+    status: '',
+    location: '',
     greeting: 'Hello, I am',
-    name: 'Luiz Matheus Rodrigues Lins',
+    name: 'Luiz Lins',
     role: 'Software Engineer · Front-end & Full Stack',
-    positioning: 'Front-end focused developer with end-to-end delivery: from resilient interfaces in Vue, Nuxt, and React to Node.js and Java APIs, backed by self-managed infrastructure (VPS, DNS, SSL). Dedicated to sustainable code, measurable impact, and direct collaboration.',
+    positioning: 'Front-end focused developer with end-to-end delivery: from resilient interfaces in <strong>Vue</strong>, <strong>Nuxt</strong>, and <strong>React</strong> to <strong>Node.js</strong>, <strong>PHP (Laravel)</strong>, and <strong>Java</strong> APIs, backed by self-managed infrastructure (VPS, DNS, SSL). Dedicated to sustainable code, measurable impact, and direct collaboration.',
     ctaProjects: 'View selected works',
     ctaContact: 'Get in touch',
     downloadCv: 'Download Resume (PDF)'
@@ -149,7 +149,7 @@ export const enContent: PortfolioContent = {
     availabilityNote: 'Based in Campina Grande, PB · Available for immediate remote employment.'
   },
   footer: {
-    copyright: '© 2026 Luiz Matheus Rodrigues Lins. All rights reserved.',
+    copyright: '© 2026 Luiz Lins. All rights reserved.',
     techStack: 'Built with Nuxt 4 & Tailwind CSS · Pure SSG',
     backToTop: 'Back to top'
   }

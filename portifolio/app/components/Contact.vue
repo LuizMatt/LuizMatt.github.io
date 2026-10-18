@@ -73,7 +73,7 @@ function copyEmailAddress() {
           </div>
           <a
             href="/Luiz-Lins-CV.pdf"
-            download="Luiz-Matheus-Lins-CV.pdf"
+            download="Luiz-Lins-CV.pdf"
             class="mt-4 inline-flex items-center gap-2 text-xs font-mono font-medium text-emerald-600 dark:text-emerald-400 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded py-1 self-start"
           >
             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

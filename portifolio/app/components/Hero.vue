@@ -6,18 +6,7 @@ const { content } = useLocale()
 
 <template>
   <section class="pt-20 pb-16 md:pt-32 md:pb-24 border-b border-surface-light-border dark:border-surface-dark-border">
-    <div class="max-w-4xl mx-auto px-6">
-      <!-- Status Badge & Location -->
-      <div class="flex flex-wrap items-center gap-3 mb-6">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-xs font-mono font-medium">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" aria-hidden="true"></span>
-          {{ content.hero.status }}
-        </div>
-        <span class="text-xs font-mono text-gray-500 dark:text-gray-400">
-          {{ content.hero.location }}
-        </span>
-      </div>
-
+    <div class="max-w-6xl mx-auto px-6">
       <!-- Main Headline: Name in Editorial Serif -->
       <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-normal tracking-tight text-gray-900 dark:text-white leading-[1.08] mb-6">
         {{ content.hero.name }}
@@ -29,9 +18,10 @@ const { content } = useLocale()
       </p>
 
       <!-- Positioning Statement -->
-      <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 font-sans leading-relaxed max-w-3xl mb-10">
-        {{ content.hero.positioning }}
-      </p>
+      <p
+        class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 font-sans leading-relaxed max-w-3xl mb-10 [&>strong]:text-emerald-600 dark:[&>strong]:text-emerald-400 [&>strong]:font-semibold"
+        v-html="content.hero.positioning"
+      />
 
       <!-- CTAs -->
       <div class="flex flex-wrap items-center gap-4">
@@ -54,7 +44,7 @@ const { content } = useLocale()
 
         <a
           href="/Luiz-Lins-CV.pdf"
-          download="Luiz-Matheus-Lins-CV.pdf"
+          download="Luiz-Lins-CV.pdf"
           class="inline-flex items-center gap-2 px-4 py-3 text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 text-sm font-mono transition-colors"
         >
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

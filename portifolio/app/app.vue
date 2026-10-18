@@ -10,15 +10,17 @@ import Footer from './components/Footer.vue'
 
 const { content } = useLocale()
 
+const stripHtml = (text: string) => text ? text.replace(/<[^>]*>/g, '') : ''
+
 useSeoMeta({
   title: () => `${content.value.hero.name} — ${content.value.hero.role}`,
   ogTitle: () => `${content.value.hero.name} — ${content.value.hero.role}`,
-  description: () => content.value.hero.positioning,
-  ogDescription: () => content.value.hero.positioning,
+  description: () => stripHtml(content.value.hero.positioning),
+  ogDescription: () => stripHtml(content.value.hero.positioning),
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: () => `${content.value.hero.name} — ${content.value.hero.role}`,
-  twitterDescription: () => content.value.hero.positioning
+  twitterDescription: () => stripHtml(content.value.hero.positioning)
 })
 </script>
 
