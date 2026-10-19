@@ -10,8 +10,8 @@ defineProps<{
 </script>
 
 <template>
-  <article class="rounded-2xl border border-surface-light-border dark:border-surface-dark-border bg-white dark:bg-surface-dark-card p-6 md:p-8 transition-all hover:border-emerald-500/40 dark:hover:border-emerald-500/40 shadow-sm">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+  <article class="h-full rounded-2xl border border-surface-light-border dark:border-surface-dark-border bg-white dark:bg-surface-dark-card p-5 sm:p-7 md:p-8 transition-all hover:border-emerald-500/40 dark:hover:border-emerald-500/40 shadow-sm">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center h-full">
       <!-- Left / Top: Mockup Visual -->
       <div class="lg:col-span-6">
         <a
@@ -25,7 +25,7 @@ defineProps<{
             :src="project.previewImage"
             :alt="`Interface de ${project.title}`"
             loading="lazy"
-            class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.01]"
+            class="w-full aspect-[16/10] sm:aspect-auto object-cover object-top transition-transform duration-300 group-hover:scale-[1.01]"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
             <span class="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 bg-black/80 px-3 py-1 rounded">
@@ -53,12 +53,12 @@ defineProps<{
             {{ project.title }}
           </h3>
 
-          <p class="text-sm text-gray-600 dark:text-gray-400 font-sans mb-5">
+          <p class="text-sm text-gray-600 dark:text-gray-400 font-sans mb-4 sm:mb-5">
             {{ project.role }}
           </p>
 
           <!-- Problem & Solution Flow -->
-          <div class="space-y-3.5 mb-6 text-sm text-gray-700 dark:text-gray-300">
+          <div class="space-y-3 mb-5 text-sm text-gray-700 dark:text-gray-300">
             <div>
               <span class="text-xs font-medium text-gray-400 dark:text-gray-500 block mb-0.5">
                 {{ problemLabel }}
@@ -75,8 +75,8 @@ defineProps<{
           </div>
 
           <!-- Prominent Metric Callout -->
-          <div class="flex items-center gap-4 pt-3 pb-3 mb-5 border-t border-surface-light-border/60 dark:border-surface-dark-border/60">
-            <span class="text-4xl sm:text-5xl font-mono font-bold text-emerald-500 dark:text-emerald-400 tracking-tight leading-none">
+          <div class="flex items-center gap-3 sm:gap-4 pt-3 pb-3 mb-4 sm:mb-5 border-t border-surface-light-border/60 dark:border-surface-dark-border/60">
+            <span class="text-3xl sm:text-5xl font-mono font-bold text-emerald-500 dark:text-emerald-400 tracking-tight leading-none">
               {{ project.metric.value }}
             </span>
             <div class="text-xs leading-snug">
@@ -92,7 +92,7 @@ defineProps<{
 
         <!-- Tags & Live Link -->
         <div>
-          <div class="flex flex-wrap gap-1.5 mb-5">
+          <div class="flex flex-wrap gap-1.5 mb-4 sm:mb-5">
             <span
               v-for="tag in project.tags"
               :key="tag"
