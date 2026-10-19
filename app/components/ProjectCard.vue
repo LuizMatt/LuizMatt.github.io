@@ -7,6 +7,8 @@ defineProps<{
   solutionLabel: string
   visitLive: string
 }>()
+
+const assetUrl = useAssetUrl()
 </script>
 
 <template>
@@ -22,7 +24,7 @@ defineProps<{
           :aria-label="`${visitLive} - ${project.title}`"
         >
           <img
-            :src="project.previewImage"
+            :src="assetUrl(project.previewImage)"
             :alt="`Interface de ${project.title}`"
             loading="lazy"
             class="w-full aspect-[16/10] sm:aspect-auto object-cover object-top transition-transform duration-300 group-hover:scale-[1.01]"

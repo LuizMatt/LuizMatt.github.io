@@ -5,6 +5,7 @@ import { useTheme } from '../composables/useTheme'
 
 const { locale, content, toggleLocale } = useLocale()
 const { isDark, toggleTheme } = useTheme()
+const assetUrl = useAssetUrl()
 const isMobileMenuOpen = ref(false)
 
 function closeMobileMenu() {
@@ -94,7 +95,7 @@ function closeMobileMenu() {
 
         <!-- Download CV Button Desktop -->
         <a
-          href="/Luiz-Lins-CV.pdf"
+          :href="assetUrl('/Luiz-Lins-CV.pdf')"
           download="Luiz-Lins-CV.pdf"
           class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-md bg-emerald-600 hover:bg-emerald-700 text-white dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:text-zinc-950 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
         >
@@ -151,7 +152,7 @@ function closeMobileMenu() {
         {{ content.nav.contact }}
       </a>
       <a
-        href="/Luiz-Lins-CV.pdf"
+        :href="assetUrl('/Luiz-Lins-CV.pdf')"
         download="Luiz-Lins-CV.pdf"
         class="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-medium rounded-md bg-emerald-600 text-white dark:bg-emerald-500 dark:text-zinc-950"
       >

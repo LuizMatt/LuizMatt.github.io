@@ -2,6 +2,7 @@
 import { useLocale } from '../composables/useLocale'
 
 const { content } = useLocale()
+const assetUrl = useAssetUrl()
 </script>
 
 <template>
@@ -43,7 +44,7 @@ const { content } = useLocale()
         </a>
 
         <a
-          href="/Luiz-Lins-CV.pdf"
+          :href="assetUrl('/Luiz-Lins-CV.pdf')"
           download="Luiz-Lins-CV.pdf"
           class="inline-flex items-center gap-2 px-4 py-3 text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 text-sm font-mono transition-colors"
         >
