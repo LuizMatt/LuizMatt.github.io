@@ -16,8 +16,8 @@ export const ptContent: PortfolioContent = {
     location: '',
     greeting: 'Olá, sou',
     name: 'Luiz Lins',
-    role: 'Software Engineer · Front-end & Full Stack',
-    positioning: 'Desenvolvedor focado em front-end com experiência de ponta a ponta: de interfaces resilientes em <strong>Vue</strong>, <strong>Nuxt</strong> e <strong>React</strong> a APIs em <strong>Node.js</strong>, <strong>PHP (Laravel)</strong> e <strong>Java</strong>, com infraestrutura própria (VPS, DNS, SSL). Foco em código sustentável, impacto mensurável e colaboração direta.',
+    role: 'Software Engineer · Back-end & Full Stack',
+    positioning: 'Desenvolvedor focado em back-end com experiência de ponta a ponta: de interfaces resilientes em <strong>Vue</strong>, <strong>Nuxt</strong> e <strong>React</strong> a APIs em <strong>Node.js</strong>, <strong>PHP (Laravel)</strong> e <strong>Java</strong>, com infraestrutura própria (VPS, DNS, SSL) e <strong>Docker</strong>. Foco em código sustentável, impacto mensurável e colaboração direta.',
     ctaProjects: 'Ver projetos em produção',
     ctaContact: 'Entrar em contato',
     downloadCv: 'Baixar Currículo (PDF)'
@@ -45,7 +45,7 @@ export const ptContent: PortfolioContent = {
         },
         problem: 'A empresa precisava de uma presença digital rápida, moderna e fácil de atualizar, sem custos recorrentes de plataformas gerenciadas.',
         solution: 'Desenvolvi interface 100% responsiva com Nuxt e Tailwind CSS, API em Node.js e infraestrutura completa em VPS (Nginx, DNS e SSL/HTTPS), com painel autônomo para o cliente gerenciar planos e banners.',
-        tags: ['Nuxt', 'Tailwind', 'Node.js', 'Nginx', 'VPS', 'HTTPS']
+        tags: ['Node.js', 'Nginx', 'VPS', 'HTTPS', 'Nuxt', 'Tailwind']
       },
       {
         id: 'animabrindes',
@@ -62,7 +62,7 @@ export const ptContent: PortfolioContent = {
         },
         problem: 'Demanda por um catálogo comercial ágil, com identidade visual forte e navegação fluida em mobile e desktop, sem depender de plataformas caras.',
         solution: 'Prototipação no Figma, desenvolvimento do front-end totalmente responsivo em React, API em Node.js e orquestração do deploy em VPS própria com Nginx e SSL.',
-        tags: ['React', 'Node.js', 'VPS', 'Figma', 'Nginx']
+        tags: ['Node.js', 'VPS', 'Nginx', 'React', 'Figma']
       }
     ]
   },
@@ -106,8 +106,8 @@ export const ptContent: PortfolioContent = {
     items: [
       {
         number: '01',
-        title: 'Engenharia de Front-end com Visão de Produto',
-        description: 'Interfaces devem ser construídas como sistemas consistentes e previsíveis. Não apenas telas estéticas, mas componentes sustentáveis que reduzem o custo de manutenção da equipe.'
+        title: 'Arquitetura de APIs Resiliente com Visão de Produto',
+        description: 'Sistemas e APIs devem ser construídos para estabilidade e clareza de regras de negócio, com contratos consistentes, cache inteligente e tratamento de falhas. Não apenas código que roda, mas serviços sustentáveis que geram valor direto ao produto e reduzem custos de manutenção.'
       },
       {
         number: '02',
@@ -123,16 +123,16 @@ export const ptContent: PortfolioContent = {
     skillsTitle: 'Stack Tecnológica',
     skills: [
       {
-        category: 'Front-end',
-        skills: ['JavaScript (ES6+)', 'React', 'Vue.js', 'Nuxt.js', 'HTML5', 'CSS3', 'Tailwind CSS']
-      },
-      {
         category: 'Back-end & Dados',
-        skills: ['Node.js', 'Java', 'PostgreSQL', 'APIs RESTful']
+        skills: ['Node.js', 'PHP (Laravel)', 'Java', 'PostgreSQL', 'Redis', 'APIs RESTful']
       },
       {
         category: 'Infraestrutura & Ferramentas',
-        skills: ['Git', 'Gestão de VPS (Hostinger)', 'Configuração de DNS', 'SSL/HTTPS', 'Figma']
+        skills: ['Docker', 'Git', 'Gestão de VPS (Linux/Hostinger)', 'Nginx', 'Configuração de DNS', 'SSL/HTTPS']
+      },
+      {
+        category: 'Front-end',
+        skills: ['JavaScript (ES6+)', 'Vue.js', 'Nuxt.js', 'React', 'Tailwind CSS', 'Figma']
       }
     ],
     languagesTitle: 'Idiomas',
@@ -144,7 +144,7 @@ export const ptContent: PortfolioContent = {
   contact: {
     sectionNumber: '04',
     title: 'Vamos Conversar',
-    subtitle: 'Aberto a oportunidades como Front-end ou Full Stack Engineer em times com foco em código sustentável e resultados de negócio.',
+    subtitle: 'Aberto a oportunidades como Back-end ou Full Stack Engineer em times com foco em código sustentável, arquitetura resiliente e resultados de negócio.',
     emailLabel: 'E-mail direto',
     copyEmail: 'Copiar e-mail',
     copied: 'E-mail copiado!',

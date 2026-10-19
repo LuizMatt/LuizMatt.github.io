@@ -16,8 +16,8 @@ export const enContent: PortfolioContent = {
     location: '',
     greeting: 'Hello, I am',
     name: 'Luiz Lins',
-    role: 'Software Engineer · Front-end & Full Stack',
-    positioning: 'Front-end focused developer with end-to-end delivery: from resilient interfaces in <strong>Vue</strong>, <strong>Nuxt</strong>, and <strong>React</strong> to <strong>Node.js</strong>, <strong>PHP (Laravel)</strong>, and <strong>Java</strong> APIs, backed by self-managed infrastructure (VPS, DNS, SSL). Dedicated to sustainable code, measurable impact, and direct collaboration.',
+    role: 'Software Engineer · Back-end & Full Stack',
+    positioning: 'Back-end focused developer with end-to-end delivery: from resilient interfaces in <strong>Vue</strong>, <strong>Nuxt</strong>, and <strong>React</strong> to robust APIs in <strong>Node.js</strong>, <strong>PHP (Laravel)</strong>, and <strong>Java</strong>, backed by self-managed infrastructure (VPS, DNS, SSL) and <strong>Docker</strong>. Dedicated to sustainable code, measurable impact, and direct collaboration.',
     ctaProjects: 'View production projects',
     ctaContact: 'Get in touch',
     downloadCv: 'Download Resume (PDF)'
@@ -45,7 +45,7 @@ export const enContent: PortfolioContent = {
         },
         problem: 'The business required a fast, modern digital presence that was easy to update without paying recurring fees for managed platforms.',
         solution: 'Engineered a modern, fully responsive front-end with Nuxt and Tailwind CSS, Node.js API, and full VPS infrastructure (Nginx, DNS, and SSL/HTTPS), plus a custom dashboard for client autonomy.',
-        tags: ['Nuxt', 'Tailwind', 'Node.js', 'Nginx', 'VPS', 'HTTPS']
+        tags: ['Node.js', 'Nginx', 'VPS', 'HTTPS', 'Nuxt', 'Tailwind']
       },
       {
         id: 'animabrindes',
@@ -62,7 +62,7 @@ export const enContent: PortfolioContent = {
         },
         problem: 'Demand for a fast commercial catalog with strong branding and seamless navigation across mobile and desktop, avoiding high recurring SaaS costs.',
         solution: 'Figma prototyping, fully responsive React front-end development, Node.js API, and end-to-end VPS deployment orchestrated with Nginx and SSL.',
-        tags: ['React', 'Node.js', 'VPS', 'Figma', 'Nginx']
+        tags: ['Node.js', 'VPS', 'Nginx', 'React', 'Figma']
       }
     ]
   },
@@ -106,8 +106,8 @@ export const enContent: PortfolioContent = {
     items: [
       {
         number: '01',
-        title: 'Front-end as Product Engineering',
-        description: 'Interfaces are scalable component systems. Beyond aesthetics, they must be robust, accessible, and maintainable to lower long-term team overhead.'
+        title: 'Resilient API Architecture with Product Vision',
+        description: 'Systems and APIs must be engineered for reliability and business rule clarity, featuring predictable contracts, strategic caching, and graceful failure handling. Beyond just working code, building maintainable services that drive tangible product value.'
       },
       {
         number: '02',
@@ -123,16 +123,16 @@ export const enContent: PortfolioContent = {
     skillsTitle: 'Technology Stack',
     skills: [
       {
-        category: 'Front-end',
-        skills: ['JavaScript (ES6+)', 'React', 'Vue.js', 'Nuxt.js', 'HTML5', 'CSS3', 'Tailwind CSS']
-      },
-      {
         category: 'Back-end & Data',
-        skills: ['Node.js', 'Java', 'PostgreSQL', 'RESTful APIs']
+        skills: ['Node.js', 'PHP (Laravel)', 'Java', 'PostgreSQL', 'Redis', 'RESTful APIs']
       },
       {
         category: 'Infrastructure & Tools',
-        skills: ['Git', 'Hostinger VPS Management', 'DNS & SSL/HTTPS Configuration', 'Figma']
+        skills: ['Docker', 'Git', 'Linux VPS Management', 'Nginx', 'DNS & SSL/HTTPS Configuration']
+      },
+      {
+        category: 'Front-end',
+        skills: ['JavaScript (ES6+)', 'Vue.js', 'Nuxt.js', 'React', 'Tailwind CSS', 'Figma']
       }
     ],
     languagesTitle: 'Languages',
@@ -144,7 +144,7 @@ export const enContent: PortfolioContent = {
   contact: {
     sectionNumber: '04',
     title: 'Let’s Connect',
-    subtitle: 'Interested in Front-end and Full Stack engineering roles in teams valuing code quality and business impact.',
+    subtitle: 'Interested in Back-end and Full Stack engineering roles in teams valuing clean architecture, sustainable code, and business impact.',
     emailLabel: 'Direct Email',
     copyEmail: 'Copy Email',
     copied: 'Email Copied!',
