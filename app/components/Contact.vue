@@ -110,13 +110,6 @@ function copyEmailAddress() {
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
           </svg>
         </a>
-
-        <a
-          href="tel:+5583993409288"
-          class="inline-flex items-center gap-2 text-sm font-mono text-gray-700 dark:text-gray-300 hover:text-emerald-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded px-2 py-1"
-        >
-          <span>+55 83 99340-9288</span>
-        </a>
       </div>
 
       <!-- Availability Footnote -->
