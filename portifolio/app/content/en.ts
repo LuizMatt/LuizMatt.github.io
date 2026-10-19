@@ -18,13 +18,13 @@ export const enContent: PortfolioContent = {
     name: 'Luiz Lins',
     role: 'Software Engineer · Front-end & Full Stack',
     positioning: 'Front-end focused developer with end-to-end delivery: from resilient interfaces in <strong>Vue</strong>, <strong>Nuxt</strong>, and <strong>React</strong> to <strong>Node.js</strong>, <strong>PHP (Laravel)</strong>, and <strong>Java</strong> APIs, backed by self-managed infrastructure (VPS, DNS, SSL). Dedicated to sustainable code, measurable impact, and direct collaboration.',
-    ctaProjects: 'View selected works',
+    ctaProjects: 'View production projects',
     ctaContact: 'Get in touch',
     downloadCv: 'Download Resume (PDF)'
   },
   works: {
     sectionNumber: '01',
-    title: 'Selected Works',
+    title: 'Production Projects',
     subtitle: 'Real-world applications engineered with precision, user-first ergonomics, and clean architecture.',
     problemLabel: 'The Problem',
     solutionLabel: 'What I Did',
@@ -41,28 +41,28 @@ export const enContent: PortfolioContent = {
         metric: {
           value: '92',
           label: 'on PageSpeed Insights (SEO).',
-          detail: 'Client updates the site autonomously.'
+          detail: '100% responsive with autonomous client CMS.'
         },
-        problem: 'The company needed a fast, easily editable website without paying for expensive managed platforms.',
-        solution: 'Engineered front-end, API, and infrastructure from scratch, with custom DNS, SSL, and VPS deployment, plus a client dashboard to update plans, pricing, and banners.',
-        tags: ['Nuxt', 'Node.js', 'Nginx', 'VPS']
+        problem: 'The business required a fast, modern digital presence that was easy to update without paying recurring fees for managed platforms.',
+        solution: 'Engineered a modern, fully responsive front-end with Nuxt and Tailwind CSS, Node.js API, and full VPS infrastructure (Nginx, DNS, and SSL/HTTPS), plus a custom dashboard for client autonomy.',
+        tags: ['Nuxt', 'Tailwind', 'Node.js', 'Nginx', 'VPS', 'HTTPS']
       },
       {
         id: 'animabrindes',
         title: 'AnimaBrindes',
         year: '2025',
-        role: 'Commercial catalog & digital prototyping',
+        role: 'Full-stack e-commerce & digital catalog',
         category: 'Freelance',
-        liveUrl: 'https://animabrindes.com',
-        previewImage: '/projects/animabrindes-preview.svg',
+        liveUrl: 'https://animabrindes.com.br',
+        previewImage: '/projects/animabrindes.png',
         metric: {
-          value: '0',
-          label: 'code rework.',
-          detail: 'Upfront validation and approval in Figma.'
+          value: '100%',
+          label: 'responsive & secure (HTTPS).',
+          detail: 'Custom VPS deployment with Nginx, high availability, and fluid mobile UX.'
         },
-        problem: 'Urgent commercial digital catalog with zero tolerance for visual rework during code implementation.',
-        solution: 'End-to-end Figma prototyping validated upfront with the client, followed by agile development and HTTPS production deploy.',
-        tags: ['Figma', 'Front-end', 'Tailwind', 'HTTPS']
+        problem: 'Demand for a fast commercial catalog with strong branding and seamless navigation across mobile and desktop, avoiding high recurring SaaS costs.',
+        solution: 'Figma prototyping, fully responsive React front-end development, Node.js API, and end-to-end VPS deployment orchestrated with Nginx and SSL.',
+        tags: ['React', 'Node.js', 'VPS', 'Figma', 'Nginx']
       }
     ]
   },
