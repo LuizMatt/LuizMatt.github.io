@@ -39,7 +39,7 @@ jobs:
       - name: Generate static site
         run: pnpm nuxt build --preset github_pages
         env:
-          NUXT_APP_BASE_URL: /portifolio/
+          NUXT_APP_BASE_URL: /
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
