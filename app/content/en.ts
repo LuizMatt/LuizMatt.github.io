@@ -53,7 +53,7 @@ export const enContent: PortfolioContent = {
         year: '2025',
         role: 'Full-stack e-commerce & digital catalog',
         category: 'Freelance',
-        liveUrl: 'https://animabrindes.com.br',
+        liveUrl: 'https://animabrindes.com',
         previewImage: '/projects/animabrindes.png',
         metric: {
           value: '100%',
