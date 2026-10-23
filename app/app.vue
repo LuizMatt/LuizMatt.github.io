@@ -3,6 +3,7 @@ import { useLocale } from './composables/useLocale'
 import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue'
 import SelectedWorks from './components/SelectedWorks.vue'
+import Articles from './components/Articles.vue'
 import Experience from './components/Experience.vue'
 import HowIWork from './components/HowIWork.vue'
 import Contact from './components/Contact.vue'
@@ -31,6 +32,7 @@ useSeoMeta({
     <main id="main-content" class="flex-grow focus:outline-none" tabindex="-1">
       <Hero />
       <SelectedWorks />
+      <Articles />
       <Experience />
       <HowIWork />
       <Contact />
