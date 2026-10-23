@@ -44,9 +44,53 @@ export interface SkillCategory {
   skills: string[]
 }
 
+export interface ArticleImage {
+  src: string
+  alt: string
+  caption: string
+}
+
+export interface ArticlePoint {
+  label: string
+  text: string
+}
+
+export interface ArticleSection {
+  id: string
+  title?: string
+  paragraphs: string[]
+  points?: ArticlePoint[]
+  image?: ArticleImage
+}
+
+export interface ArticleItem {
+  id: string
+  slug: string
+  title: string
+  subtitle: string
+  category: string
+  readTime: string
+  date: string
+  tags: string[]
+  summary: string
+  sections: ArticleSection[]
+}
+
+export interface ArticlesSectionContent {
+  sectionNumber: string
+  title: string
+  subtitle: string
+  readAction: string
+  closeAction: string
+  backToArticles: string
+  tapToZoomHint: string
+  items: ArticleItem[]
+}
+
 export interface PortfolioContent {
   nav: {
     projects: string
+    articles: string
     experience: string
     principles: string
     contact: string
@@ -75,6 +119,7 @@ export interface PortfolioContent {
     visitLive: string
     projects: ProjectItem[]
   }
+  articles: ArticlesSectionContent
   experience: {
     sectionNumber: string
     title: string
